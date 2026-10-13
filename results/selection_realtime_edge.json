@@ -1,0 +1,8 @@
+{
+    "scenario": "realtime_edge",
+    "config_version": "1.0",
+    "primary_model": "DecisionTree",
+    "reserve_model": null,
+    "eligible_count": 1,
+    "rejected_count": 3
+}

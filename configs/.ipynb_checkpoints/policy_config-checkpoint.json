@@ -1,0 +1,17 @@
+{
+    "policy_id": "abalone_premium_v1",
+    "model_version": "calibrated_logreg_v1",
+    "score_semantics": "probability_of_premium_class",
+    "cost_scenario": {
+        "c_fp": 5,
+        "c_fn": 1
+    },
+    "capacity_limit": 0.2,
+    "threshold": 0.82,
+    "actions": {
+        "positive": "premium_packaging",
+        "negative": "standard_canning"
+    },
+    "created_at": "2026-10-13",
+    "random_state": 42
+}

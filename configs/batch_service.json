@@ -1,0 +1,35 @@
+{
+    "scenario_name": "batch_processing",
+    "description": "\u041d\u0456\u0447\u043d\u0435 \u043f\u0430\u043a\u0435\u0442\u043d\u0435 \u043e\u043f\u0440\u0430\u0446\u044e\u0432\u0430\u043d\u043d\u044f \u043d\u0430 \u0441\u0435\u0440\u0432\u0435\u0440\u0456",
+    "constraints": {
+        "cv_recall_mean": {
+            "min": 0.4
+        },
+        "latency_p95_ms": {
+            "max": 100.0
+        },
+        "model_size_mb": {
+            "max": 10.0
+        }
+    },
+    "criteria": {
+        "cv_f1_mean": {
+            "direction": "maximize",
+            "weight": 0.6,
+            "worst": 0.6,
+            "best": 0.7
+        },
+        "cv_roc_auc_mean": {
+            "direction": "maximize",
+            "weight": 0.3,
+            "worst": 0.8,
+            "best": 0.9
+        },
+        "latency_p95_ms": {
+            "direction": "minimize",
+            "weight": 0.1,
+            "worst": 100.0,
+            "best": 1.0
+        }
+    }
+}

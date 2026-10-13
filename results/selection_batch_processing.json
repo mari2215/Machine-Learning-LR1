@@ -1,0 +1,8 @@
+{
+    "scenario": "batch_processing",
+    "config_version": "1.0",
+    "primary_model": "HistGradientBoosting",
+    "reserve_model": "LogisticRegression",
+    "eligible_count": 4,
+    "rejected_count": 0
+}

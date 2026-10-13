@@ -1,0 +1,4 @@
+model,violations
+LogisticRegression,"latency_p95_ms: above maximum (got 11.0560, need <= 10.0)"
+RandomForest,"latency_p95_ms: above maximum (got 63.2681, need <= 10.0)"
+HistGradientBoosting,"latency_p95_ms: above maximum (got 13.9252, need <= 10.0)"

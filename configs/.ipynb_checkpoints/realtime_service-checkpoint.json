@@ -1,0 +1,35 @@
+{
+    "scenario_name": "realtime_edge_service",
+    "description": "Синхронний сервіс на периферійному обладнанні",
+    "constraints": {
+        "cv_recall_mean": {
+            "min": 0.4
+        },
+        "latency_p95_ms": {
+            "max": 10.0
+        },
+        "model_size_mb": {
+            "max": 5.0
+        }
+    },
+    "criteria": {
+        "cv_f1_mean": {
+            "direction": "maximize",
+            "weight": 0.5,
+            "worst": 0.6,
+            "best": 0.7
+        },
+        "latency_p95_ms": {
+            "direction": "minimize",
+            "weight": 0.3,
+            "worst": 10.0,
+            "best": 1.0
+        },
+        "cv_roc_auc_mean": {
+            "direction": "maximize",
+            "weight": 0.2,
+            "worst": 0.8,
+            "best": 0.9
+        }
+    }
+}
